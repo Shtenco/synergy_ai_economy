@@ -1,0 +1,7 @@
+source,uri,coverage,ingested,calibration_role
+CBR official USD/RUB,https://www.cbr.ru/currency_base/dynamics/,2016-2025 month-end,yes,lagged FX stress cost only
+Rosstat input output,https://www.rosstat.gov.ru/statistics/accounts,2016 and 2021 base IO workbooks,NO,technology calibration NOT passed
+Bank of Russia monetary aggregates,https://www.cbr.ru/statistics/macro_itm/dkfs/monetary_agg/,M0 M2 credit,NO,monetary calibration NOT passed
+Kazakhstan official input-output,https://stat.gov.kz/ru/industries/economy/national-accounts/spreadsheets/,2021-2024,NO,cross-country empirical input-output NOT passed
+SYNERGY EURASIAN,https://github.com/Shtenco/synergy_eurasian,source and specifications,architecture only,EIIOM taxonomy and construction stages
+SYNERGY Financial OS,https://github.com/Shtenco/synergy_financial_os,accounting research,architecture only,risk and equity recognition rules

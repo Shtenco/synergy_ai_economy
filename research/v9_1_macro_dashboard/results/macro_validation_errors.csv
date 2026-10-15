@@ -1,0 +1,3 @@
+stress,year_range,gva_growth_mae_pp,cpi_inflation_mae_pp,status
+0,2023-2025,4.567138362965399,9.247128151921457,"FAILED macro-validation (scenario-conditioned historical shocks, no independent real-economy forecasts)"
+1,2023-2025,3.4814676455380504,7.925603148317507,"FAILED macro-validation (scenario-conditioned historical shocks, no independent real-economy forecasts)"

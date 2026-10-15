@@ -1,0 +1,27 @@
+{
+  "software": "SINERGY V9 bounded 5-country real-goods ABM",
+  "scenario_runs": 128,
+  "train_runs": 60,
+  "countries": 5,
+  "goods": 8,
+  "household_agents": 300,
+  "sector_firms": 40,
+  "unique_policy_rules": [
+    "capitalism",
+    "soviet",
+    "russia_mixed",
+    "synergy"
+  ],
+  "monetary_policies": [
+    "baseline",
+    "escrow",
+    "demand",
+    "escrow_demand"
+  ],
+  "max_goods_identity_error": 1.0550138540565968e-10,
+  "max_bank_identity_error": 1.1368683772161605e-11,
+  "completed_runs_all_120_months": true,
+  "strict_historical_macro_calibration": false,
+  "real_rosstat_io_workbook_ingested": false,
+  "fx_set": "120 month-end observed CBR USD/RUB, lagged only"
+}

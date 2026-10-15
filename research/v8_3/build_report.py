@@ -1,0 +1,12 @@
+from pathlib import Path
+import pandas as pd, numpy as np, matplotlib.pyplot as plt, json, hashlib,zipfile
+R=Path(__file__).resolve().parent
+p=R/'results';z=pd.read_csv(p/'main_4x4x2.csv');g=pd.read_csv(p/'group_means.csv');ab=pd.read_csv(p/'all_modes_project_factory_ablation.csv');sc=['capitalism','russia_mixed','soviet_planning','synergy_cyber'];ru=['Капитализм','Смешанная РФ','Плановая СССР','СИНЕРГИЯ']
+for metric,label,filename in [('sales','Физические конечные продажи OOS, усл. ед.','01_oos_physical_output.png'),('consumption','Реальное потребление OOS, усл. ед.','02_oos_consumption.png'),('capital_written_off','Физический капитал списан из WIP, усл. ед.','03_project_losses.png')]:
+ d=g[(g.stress==1)&g.policy.isin(['baseline','escrow_demand'])]
+ a=d[d.policy=='baseline'].set_index('mode').loc[sc][metric].values;b=d[d.policy=='escrow_demand'].set_index('mode').loc[sc][metric].values
+ fig,ax=plt.subplots(figsize=(11,4.5));i=np.arange(len(sc));ax.bar(i-.19,a,.36,label='Без целевой программы');ax.bar(i+.19,b,.36,label='Эскроу 1:1 + спрос');ax.set_xticks(i,ru);ax.set_ylabel(label);ax.legend();ax.grid(axis='y',alpha=.2);fig.tight_layout();fig.savefig(R/'figures'/filename,dpi=145);plt.close(fig)
+fig,ax=plt.subplots(figsize=(11,4.5));q=ab[ab.stress==1].groupby('mode').delta.mean().loc[sc];ax.bar(ru,q.values);ax.set_ylabel('∆ физического выпуска, проекты минус мгновенные инвестиции');ax.axhline(0,lw=.75);ax.grid(axis='y',alpha=.2);fig.tight_layout();fig.savefig(R/'figures'/'04_cost_of_real_project_delay.png',dpi=145);plt.close(fig)
+d=pd.read_csv(p/'monetary_counterparts_120_months.csv');fig,ax=plt.subplots(figsize=(11,4.5));ax.plot(d.month,d.m2_proxy,label='Модельный М2-прокси');ax.plot(d.month,d.loans,label='Банковские кредиты');ax.plot(d.month,d.government_bonds,label='Гособлигации в модели');ax.grid(alpha=.2);ax.set_xlabel('Модельный месяц 2016–2025');ax.set_ylabel('Условные денежные единицы (не трлн руб.)');ax.legend();fig.tight_layout();fig.savefig(R/'figures'/'05_monetary_counterparts.png',dpi=145);plt.close(fig)
+files=[x for x in R.rglob('*') if x.is_file() and x.name not in ('MANIFEST_SHA256.csv',) and not x.name.endswith('.zip') and '__pycache__' not in x.parts]; manifest=pd.DataFrame([{'path':str(x.relative_to(R)),'bytes':x.stat().st_size,'sha256':hashlib.sha256(x.read_bytes()).hexdigest()} for x in files]);manifest.to_csv(R/'MANIFEST_SHA256.csv',index=False)
+print('plots',len(list((R/'figures').glob('*.png'))),'manifest',len(manifest))

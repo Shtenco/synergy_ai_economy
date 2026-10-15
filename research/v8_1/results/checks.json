@@ -1,0 +1,10 @@
+{
+  "n_runs": 96,
+  "max_financial_error": 1.8189894035458565e-11,
+  "max_real_IO_error": 3.410605131648481e-13,
+  "max_escrow_match_error": 0.0,
+  "max_seeds": 3,
+  "historical_training_only": true,
+  "missing_actual_ROSSTAT_IO_matrix": true,
+  "calibrated_banking_M2_rejected": true
+}

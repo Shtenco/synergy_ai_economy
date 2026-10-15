@@ -1,0 +1,15 @@
+{
+  "split": "TRAIN 2016-2022; 84 months",
+  "OOS": "2023-2025; 36 months",
+  "w_shortage": 0.75,
+  "seeds_train": [
+    7000,
+    7001,
+    7002,
+    7003
+  ],
+  "selection": "maximize TRAIN physical output + 0.5 consumption - 0.5 stranded WIP",
+  "data_io": "illustrative NOT empirical Rosstat",
+  "no_oos_in_training": true,
+  "all_systems_share_project_recipes": true
+}

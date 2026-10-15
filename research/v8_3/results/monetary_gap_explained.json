@@ -1,0 +1,26 @@
+{
+  "period": "2019-12 to 2022-12",
+  "model_m2_start": 24264.30634535358,
+  "model_m2_end": 24769.33147457365,
+  "model_factor": 1.0208134995508238,
+  "secondary_observed_m2_factor": 1.56239837398374,
+  "model_m2_delta": 505.0251292200701,
+  "counterparts": {
+    "change_loans": 667.8533374770595,
+    "change_government_bonds": 1322.3516667142976,
+    "negative_change_bank_equity": -1460.8734684513547,
+    "negative_change_cb_equity": -1.0913936421275139e-11,
+    "negative_change_treasury": -24.306406519915498
+  },
+  "decomposition_residual": 5.9117155615240335e-12,
+  "empirical_validation_pass": false,
+  "critical_missing_channels": [
+    "nonfinancial resident money-holder coverage",
+    "net foreign assets and forex settlement",
+    "banks other assets/liabilities",
+    "CBR actual annual monetary aggregates",
+    "bank nonperforming loan classification",
+    "income-expenditure-consistent nominal GDP scale"
+  ],
+  "warning": "No residual credit injection or fiat emission has been applied to force M2 matching."
+}

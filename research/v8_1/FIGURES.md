@@ -1,0 +1,1 @@
+Исследовательские графики и все сырые сценарии поставляются также в локальном архиве V8.1. Команды запуска: `cd research/v8_1 && python src/calibrate_v81.py --seeds 3 && python src/io_uncertainty_v81.py && python -m unittest discover -s tests -v`. Матрица Росстата не загружена, банковская калибровка не пройдена.

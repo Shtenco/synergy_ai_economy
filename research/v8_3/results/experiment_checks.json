@@ -1,0 +1,9 @@
+{
+  "rows_main": 256,
+  "ablation_rows": 64,
+  "historical_IO_loaded": false,
+  "financial_balance_max": 1.6370904631912708e-11,
+  "goods_balance_max": 3.410605131648481e-13,
+  "escrow_mapped_to_cofinance": "inherited from V8.2, zero residual",
+  "warning": "Comparison is with a less realistic instant-investment benchmark, not an equally detailed alternative project pipeline"
+}

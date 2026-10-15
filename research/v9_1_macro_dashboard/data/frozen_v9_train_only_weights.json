@@ -1,0 +1,25 @@
+{
+  "train_seeds": [
+    1000,
+    1001,
+    1002
+  ],
+  "training_months": 84,
+  "oos_months": 36,
+  "best_policy_weight": {
+    "capitalism": 0.0,
+    "soviet": 0.25,
+    "russia_mixed": 0.0,
+    "synergy": 0.0
+  },
+  "all_modes_same_candidate_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "all_modes_same_objective": "0.45*output + 0.65*consumption - 0.20*writeoff - 0.02*debt",
+  "real_macro_calibration": false,
+  "only_historical_observed_input": "monthly_USDRUB_2016_2025"
+}

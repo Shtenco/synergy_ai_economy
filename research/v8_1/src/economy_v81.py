@@ -35,7 +35,9 @@ def gini(x):
     return float((2*np.dot(np.arange(1,len(a)+1),a)/(len(a)*a.sum())-(len(a)+1)/len(a))) if a.sum()>0 else 0.
 
 def make_fx():
-    z=pd.read_csv(ROOT/'data/usdrub_monthly_2016_2025.csv')
+    fx_path=ROOT/'data/usdrub_monthly_2016_2025.csv'
+    if not fx_path.exists():fx_path=ROOT.parents[1]/'data/usdrub_monthly_2016_2025.csv'
+    z=pd.read_csv(fx_path)
     datecol='month' if 'month' in z else ('date' if 'date' in z else z.columns[0])
     valcol='rate' if 'rate' in z else ('usdrub' if 'usdrub' in z else z.columns[1])
     z=z.sort_values(datecol)

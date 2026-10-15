@@ -1,0 +1,15 @@
+{
+  "train_only": true,
+  "trained_months": "2016-01/2022-12",
+  "m2_eval": "2019 end to 2022 end",
+  "oos_months": "2023-01/2025-12",
+  "credit_rate": 0.0,
+  "amortization": 0.016,
+  "fiscal_scale": 7.5,
+  "credit_scale": 2.0,
+  "secondary_observed_m2_factor": 1.56239837398374,
+  "model_m2_proxy_factor": 1.0361590910650955,
+  "m2_miscalibration_absolute_log_error": 0.4108110058305356,
+  "pass_m2_growth_10pct_rel_error": false,
+  "sources_note": "M2 historical annual series is secondary reproduction. M2 proxy includes deposits and nonbank cash; sectoral coverage remains incomplete."
+}

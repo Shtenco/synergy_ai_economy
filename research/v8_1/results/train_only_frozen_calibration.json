@@ -1,0 +1,9 @@
+{
+  "fiscal_scale": 7.5,
+  "credit_scale": 2.0,
+  "observed_fiscal_ratio": 1.054759744370973,
+  "observed_M2_factor": 1.56239837398374,
+  "model_fiscal_ratio": 1.0574468014079281,
+  "model_deposit_factor": 0.9872067092277017,
+  "deposit_growth_not_adequately_calibrated": true
+}

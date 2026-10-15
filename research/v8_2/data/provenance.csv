@@ -1,0 +1,9 @@
+series,period,source_url,data_status,model_use
+usd_rub_official,2016-2025,https://www.cbr.ru/currency_base/dynamics/,observed_official_month_end,contemporaneous_environment_only
+russian_real_gdp_and_cpi,2016-2025,https://rosstat.gov.ru/,observed_compiled_prior_v8,heldout_model_error_evaluation_only
+federal_budget,2019-2025,https://minfin.gov.ru/,observed_yearly_prior_v81,train_fiscal_scale_2019_2022_only
+M2_annual_secondary,2016-2025,https://sbereg.ai/macro/m2,SECONDARY_NOT_OFFICIALLY_AUDITED,train_2019_2022_and_oos_2023_2025_reporting_only
+M2_definition,current,https://www.cbr.ru/statistics/macro_itm/dkfs/methodological_commentary_ms/,official_methodology,model_accounting_definition
+CBR_M0_M2_2026_09,2026-09-01,https://www.cbr.ru/statistics/macro_itm/dkfs/monetary_agg/,official,external_sanity_only_not_fit
+rosstat_basic_input_output,2021,https://www.rosstat.gov.ru/statistics/accounts,OFFICIAL_SOURCE_LOCATED_ORIGINAL_NUMERIC_WORKBOOK_NOT_OBTAINED,NOT_CALIBRATED
+OECD_ICIO_2025,2016-2022,https://www.oecd.org/en/data/datasets/inter-country-input-output-tables.html,official_alternative_located_not_ingested,NOT_CALIBRATED

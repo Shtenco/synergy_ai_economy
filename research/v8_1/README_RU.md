@@ -60,7 +60,7 @@
 ## Воспроизведение
 
 ```bash
-python -m pip install -r ../SINERGY_RUSSIA_V8/requirements.txt
+python -m pip install -r requirements.txt
 python src/calibrate_v81.py --seeds 3
 python src/io_uncertainty_v81.py
 python -m unittest discover -s tests -v

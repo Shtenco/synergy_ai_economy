@@ -1,0 +1,10 @@
+{
+  "runs": 384,
+  "expected": 384,
+  "finance_max": 1.8189894035458565e-11,
+  "io_max": 4.547473508864641e-13,
+  "escrow_match_max": 0.0,
+  "all_modes_same_policies": true,
+  "historical_rosstat_matrix_loaded": false,
+  "m2_train_pass": false
+}

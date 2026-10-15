@@ -1,0 +1,13 @@
+{
+  "scenario_count": 96,
+  "scenario_groups": 32,
+  "max_goods_error": 1.0095391189679503e-10,
+  "max_bank_error": 1.7394086171407253e-11,
+  "historical_model_cpi_gdp_validation": "FAILED / NOT CALIBRATED",
+  "stock_prices": "SYNTHETIC settled bids/offers, not MOEX",
+  "reserve_assets": "SYNTHETIC ROW export proceeds, not actual CBR international reserves",
+  "real_gva": "production-account approximation, not national accounts GDP",
+  "household_wealth": "deposit+equity marks; excludes housing, liabilities and pension claims",
+  "capital_controls": "fixed rule, not actual central bank law",
+  "physical_coefficients": "ASSUMPTIONS; no Rosstat IO XLSX was loaded"
+}
